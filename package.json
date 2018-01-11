@@ -1,0 +1,33 @@
+{
+  "name": "trans-resource-messenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "db:create": "createdb transmessenger",
+    "db:drop": "dropdb transmessenger",
+    "db:schema": "psql transmessenger < ./src/server.js",
+    "db:load": "psql transmessenger < ./src/server.js",
+    "test": "mocha --exit"
+  },
+  "author": "James McCormack",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-pg-simple": "^4.2.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6"
+  },
+  "devDependencies": {
+    "ajv": "^5.2.2",
+    "chai": "^4.1.2",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "mocha": "^4.1.0"
+  }
+}
