@@ -1,29 +1,24 @@
 require('dotenv').config();
+const http = require('http');
 const express = require('express');
-const routes = require('./routes');
-const bodyParser = require('body-parser');
 const session = require('express-session');
-const PgSession = require('connect-pg-simple')(session);
+const bodyParser = require('body-parser');
+const routes = require('./routes');
 
 const app = express();
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 app.use(session({
-  store: new PgSession({
-    conString: process.env.DATABASE_URL,
-  }),
   key: 'user_sid',
   secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
-  cookie: { maxAge: 10 * 10 * 600000 },
+  cookie: { maxAge: 10 * 10 * 60000 },
 }));
 
 app.use('/', routes);
 
-const port = process.env.PORT || 3000;
-
-app.listen(port, () => {
-  console.log(`The app is listening on port ${port}`);
+http.createServer(app).listen(1337, () => {
+  console.log('Express server listening on port 1337');
 });
