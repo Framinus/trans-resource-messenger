@@ -1,0 +1,7 @@
+{
+  "welcome": "Welcome to the Trans Resource Messaging Service! If you need to talk to someone who understands, text TALK. To find legal resources, text LEGAL. To get inspired, text GLITTER.",
+  "repeat": "I did not understand that. Please text TALK, LEGAL, or GLITTER.",
+  "talk": "Visit https://www.translifeline.org/ to talk to other transgender folks who are trained to provide support and empathy to you.",
+  "legal": "The Transgender Law Center can get you started at https://transgenderlawcenter.org/.",
+  "inspiration": ["hope", "glitter", "badassery", "cookies"] 
+}
