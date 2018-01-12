@@ -5,10 +5,6 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./src/server.js",
-    "db:create": "createdb transmessenger",
-    "db:drop": "dropdb transmessenger",
-    "db:schema": "psql transmessenger < ./src/server.js",
-    "db:load": "psql transmessenger < ./src/server.js",
     "test": "mocha --exit"
   },
   "author": "James McCormack",
@@ -18,7 +14,8 @@
     "connect-pg-simple": "^4.2.1",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "express-session": "^1.15.6"
+    "express-session": "^1.15.6",
+    "twilio": "^3.11.0"
   },
   "devDependencies": {
     "ajv": "^5.2.2",
