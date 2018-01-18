@@ -17,6 +17,8 @@ router.post('/sms', (req, res) => {
       message = replies.talk;
     } else if (messageData === 'LEGAL') {
       message = replies.legal;
+    } else if (messageData === 'HEALTH') {
+      message = replies.health;
     } else if (messageData === 'LOVE') {
       const x = Math.floor(Math.random() * (replies.inspiration.length - 1));
       message = replies.inspiration[x];
