@@ -1,17 +1,16 @@
 # Transgender Resource Messenger
 
-This project is the beginning of a long held desire to provide an easy way for Trans folks who may not have easy access to internet resources to get vital information (and inspiration) sent to them via text. I chose to use the Twilio SMS/MMS API due to its ease of integration into a standard Express App. Users can text a Twilio phone number and get a menu of options to choose from, and based on the user's reply, they will receive resource links for legal aid, crisis management, and even some inspirational pictures and quotes.
+This project is the beginning of a long held desire to provide an easy way for Trans folks who may not have easy access to internet resources to get vital information (and inspiration) sent to them via text. I chose to use the Twilio SMS/MMS API due to its ease of integration into a standard Express App. Users can text a Twilio phone number and get a menu of options to choose from, and based on the user's reply, they will receive resource links for legal aid, crisis management, trans-friendly medical professionals, and even some inspirational quotes.
 
 ### Current Features:
 
 - User receives a welcome text reply after texting anything to the main number.
 - User also receives a menu of options (currently three) to choose from.
-- If the user replies back with any one of the three words (TALK, LEGAL or INSPIRE), they receive the appropriate resource.
-- If the user replies back with a different word than those three options, they receive the menu again with a more detailed prompt of how the app works.
+- If the user replies back with any one of the four words (TALK, LEGAL, HEALTH or LOVE), they receive the appropriate resource.
+- If the user replies back with a different word than those four options, they receive the menu again with a more detailed prompt of how the app works.
 
 ### Future Features:
 
-- A link to trans friendly medical professionals based on location.
 - A verified buddy network for going to stressful appointments (like doctors or the DMV), where the user can text a request to the service and be linked up with an available buddy in their area.
 
 ## Getting Started

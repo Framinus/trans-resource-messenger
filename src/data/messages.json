@@ -1,7 +1,8 @@
 {
-  "welcome": "Welcome to the Trans Resource Messaging Service! If you need to talk to someone who understands, text TALK. To find legal resources, text LEGAL. To get inspired, text LOVE.",
-  "repeat": "I did not understand that. Please text TALK, LEGAL, or LOVE.",
+  "welcome": "Welcome to the Trans Resource Messaging Service! If you need to talk to someone who understands, text TALK. To find legal resources, text LEGAL. To find a trans-friendly medical professional, text HEALTH. To get inspired, text LOVE.",
+  "repeat": "I did not understand that. Please text TALK, LEGAL, HEALTH or LOVE.",
   "talk": "Visit https://www.translifeline.org/ to talk to other transgender folks who are trained to provide support and empathy to you.",
   "legal": "The Transgender Law Center can get you started at https://transgenderlawcenter.org/.",
+  "health": "Use the provider directory at http://glma.org/ to find safer healthcare near you!",
   "inspiration": ["I'm not missing a minute of this. It's the revolution. - Sylvia Rivera", "It is revolutionary for any trans person to choose to be seen and visible in a world that tells us we should not exist. - Laverne Cox", "Owning who we are is power. Yes. We've got to dare to stand out. - Janet Mock", "The most common way people give up their power is by thinking they don’t have any. - Alice Walker", "My right to be me is tied with a thousand threads to your right to be you. - Leslie Feinberg", "For small creatures such as we, the vastness is bearable only through love. - Carl Sagan", "We are not what other people say we are. We are who we know ourselves to be, and we are what are. - Laverne Cox"]
 }
